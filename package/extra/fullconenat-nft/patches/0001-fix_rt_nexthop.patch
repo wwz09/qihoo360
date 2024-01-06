@@ -1,0 +1,12 @@
+diff --git a/src/nf_nat_fullcone.c b/src/nf_nat_fullcone.c
+index 0b13cbe..afeed9e 100644
+--- a/src/nf_nat_fullcone.c
++++ b/src/nf_nat_fullcone.c
+@@ -21,6 +21,7 @@
+ #include <linux/atomic.h>
+ #include <linux/kernel.h>
+ #include <linux/jhash.h>
++#include <net/route.h>
+ 
+ #ifdef CONFIG_NF_CONNTRACK_CHAIN_EVENTS
+ #include <linux/notifier.h>
